@@ -1,0 +1,81 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+body {
+    background-color: deepskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+}
+.content{
+    height: 1200px;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkviolet;
+    border-radius: 20px;
+    border-style: solid;
+}
+.main-content{
+    display: flex;
+}
+.button{
+    width: 100px;
+    height: 45px;
+    background-color: deepskyblue;
+    border-radius: 10px;
+    color: black;
+    font-weight: bolder;
+}
+.button:hover{
+    cursor: pointer;
+    transition-delay: 20ms;
+    box-shadow: 5px 10px black;
+    opacity: 0.85;
+}
+.button:active{
+    opacity: 0.75;
+}
+#title{
+    margin-top: 50px;
+    justify-content: flex-start;
+    color: #2effaa;
+    text-shadow: 5px 5px 10px black;
+}
+#grid{
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    width: 1000px;
+    height: 1000px;
+    border-style: solid;
+    border-color: black;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 50px;
+}
+.grid-item {
+    box-sizing: border-box;
+    height: 62.5px;
+    border: 1px solid #ddd;
+}
+
+#tool-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: deeppink;
+    width: 120px;
+    height: 1000px;
+    border: black;
+    border-style: solid;
+    justify-items: flex-start;
+    justify-self: start;
+}
